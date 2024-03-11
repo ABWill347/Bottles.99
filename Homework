@@ -1,0 +1,29 @@
+public class BeerSong {
+    public static void main (String[] args) {
+        int beerNum = 99; //start
+        String word = "bottles"; //plural word default
+
+        while (beerNum > 0) { //checking if start # greater than 0
+
+
+            System.out.println(beerNum + " " + word + " of beer on the wall");
+            System.out.println(beerNum + " " + word + " of beer");
+            System.out.println("Take one down");
+            System.out.println("Pass it around");
+            beerNum = beerNum - 1;
+
+            if (beerNum == 1) {
+                word = "bottle"; /* singular , as in one bottle,
+                Moved it to print out bottle instead of bottles for 1
+                */
+
+            }
+
+            if (beerNum > 0) {
+                System.out.println(beerNum + " " + word + " of beer on the wall");
+            } else {
+                System.out.println("No more bottles of beer on the wall");
+            }
+        }
+        }
+        }
